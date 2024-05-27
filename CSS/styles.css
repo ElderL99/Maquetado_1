@@ -1,1 +1,17 @@
-/*# sourceMappingURL=styles.css.map */
+.sidebar {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar .nav-link {
+  color: #333;
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.l {
+  padding: 3rem;
+}/*# sourceMappingURL=styles.css.map */
