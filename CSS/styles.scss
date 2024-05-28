@@ -29,6 +29,15 @@ $theme-colors: (
   "mi-color-fav": darkred,
 );
 
+@mixin profile-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.profile-image{
+    @include profile-image()
+}
+
 .aside2 {
   background-color: rgb(242, 242, 242);
   .fiststylewrapper {
