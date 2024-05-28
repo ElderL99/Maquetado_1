@@ -1,19 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$lightGray: #717171;
+$mediumGray: #525252;
+$lightBorderForms: #bdbdbd;
+$purple:#712cf9;
+
+
 $theme-colors: (
-  "primary": #5562eb, // Azul personalizado
-  "success": #4cd3e3, // Turquesa personalizado
-  "info": #f2a654,    // Naranja personalizado
-  "warning": #ee5f5b, // Rojo personalizado
-  "danger": #55efc4,  // Verde menta personalizado
-  "light": #303952,   // Azul oscuro personalizado
-  "dark": #dcdde1,     // Gris claro personalizado
-  "front-color":peru,
-  "mi-color-fav":darkred
+  "primary": #5562eb,
+  // Azul personalizado
+  "success": #4cd3e3,
+  // Turquesa personalizado
+  "info": #f2a654,
+  // Naranja personalizado
+  "warning": #ee5f5b,
+  // Rojo personalizado
+  "danger": #55efc4,
+  // Verde menta personalizado
+  "light": #303952,
+  // Azul oscuro personalizado
+  "dark": #dcdde1,
+  // Gris claro personalizado
+  "front-color": peru,
+  "mi-color-fav": darkred,
 );
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.aside2 {
+  background-color: rgb(242, 242, 242);
+  .fiststylewrapper {
+    margin-bottom: 1rem;
+    .list-group {
+      .list-group-item {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+        }
+        &--title {
+          font-weight: bold;
+          margin-bottom: 0.3rem;
+          color: rgb(70, 70, 70);
+        }
+        &--description {
+          font-size: 0.65rem;
+          color: rgb(167, 167, 167);
+          margin-bottom: 0.3rem;
+        }
+        &--text {
+          font-size: 0.8rem;
+          color: rgb(70, 70, 70);
+          &:hover {
+            color: rgb(59, 52, 150);
+          }
+        }
+        &--comments {
+          font-size: 0.65rem;
+          color: rgb(128, 128, 128);
+        }
+        &--button {
+          color: rgb(133, 74, 24);
+          padding: 1 rem;
+          background-color: rgb(250, 204, 61);
+          width: 2rem;
+          font-size: 0.65rem;
+          border-radius: 0.3rem;
+          margin-top: 0.5rem;
+          border-style: none;
+        }
+      }
+    }
+  }
+  .secondstylewrapper {
+    p {
+      font-weight: bold;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 0.85rem;
+      margin-left: 1rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+    .list-group {
+      border-style: none;
+      .list-group-item {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          border-style: none;
+          background-color: rgb(242, 242, 242);
+          font-size: 0.9rem;
+          color: #333;
+          padding: 1rem 0.5 rem 1rem 0.5rem;
+          &:hover {
+            color: rgb(59, 52, 150);
+            opacity: 0.7rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Footer
@@ -47,4 +136,74 @@ $theme-colors: (
   }
 }
 
+// Estilos del header
+.navComponent {
+  box-shadow: 0px 0px 3px 0px $lightGray;
+  padding: 0.5rem;
+  &__container-search {
+    border: 1px solid $lightBorderForms;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: calc(100% - 150px);
+    position: relative;
+    display: none!important;
+  }
+  &__icon-logo {
+    width: 50px;
+  }
+  &__input {
+    border: none;
+    left: 1rem;
+    width: calc(100% - 150px);
+    padding-left: 34px;
+  }
+  &__button-search {
+    background-color: white;
+    border: none;
+  }
+  &__link {
+    font-size: 0.75rem;
+    color: $lightGray;
+    text-decoration: none;
 
+  }
+  &__button-mobile{
+    background: none;
+    border: none;
+  }
+}
+
+.button-link {
+  background-color: white;
+  color: $mediumGray;
+  padding: 0 0.5rem;
+  line-height: 35px;
+  &:hover {
+    background-color: hsl(234.88deg 71.93% 55.29% / 16%);
+    text-decoration: underline;
+  }
+}
+
+.button-primary {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid $purple;
+  color: $purple;
+  &:hover {
+    background-color: $purple;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width:768px)  {
+  .navComponent {
+    &__container-search {
+      display: block!important;
+    }
+    &__button-search {
+      position: absolute;
+      top: 6px;
+    }
+  }
+}
