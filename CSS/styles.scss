@@ -1,0 +1,50 @@
+$theme-colors: (
+  "primary": #5562eb, // Azul personalizado
+  "success": #4cd3e3, // Turquesa personalizado
+  "info": #f2a654,    // Naranja personalizado
+  "warning": #ee5f5b, // Rojo personalizado
+  "danger": #55efc4,  // Verde menta personalizado
+  "light": #303952,   // Azul oscuro personalizado
+  "dark": #dcdde1,     // Gris claro personalizado
+  "front-color":peru,
+  "mi-color-fav":darkred
+);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Footer
+.footer{
+  background-color: #e5e5e5;
+  font-size: 0.875rem;
+  padding: 3rem;
+  &__legals {
+    color: #404040;
+    margin: 0;
+  }
+  &__link {
+    color: #3b49df;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__nav-links {
+    margin: 0;
+  }
+  &__nav-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    &:not(:last-child)::after {
+      content: '•';
+      font-size: 1.5rem;
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+
