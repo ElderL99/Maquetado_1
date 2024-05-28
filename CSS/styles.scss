@@ -1,13 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 $theme-colors: (
-  "primary": #5562eb, // Azul personalizado
-  "success": #4cd3e3, // Turquesa personalizado
-  "info": #f2a654,    // Naranja personalizado
-  "warning": #ee5f5b, // Rojo personalizado
-  "danger": #55efc4,  // Verde menta personalizado
-  "light": #303952,   // Azul oscuro personalizado
-  "dark": #dcdde1,     // Gris claro personalizado
-  "front-color":peru,
-  "mi-color-fav":darkred
+  "primary": #5562eb,
+  // Azul personalizado
+  "success": #4cd3e3,
+  // Turquesa personalizado
+  "info": #f2a654,
+  // Naranja personalizado
+  "warning": #ee5f5b,
+  // Rojo personalizado
+  "danger": #55efc4,
+  // Verde menta personalizado
+  "light": #303952,
+  // Azul oscuro personalizado
+  "dark": #dcdde1,
+  // Gris claro personalizado
+  "front-color": peru,
+  "mi-color-fav": darkred,
 );
 
-
+.aside2 {
+  background-color: rgb(242, 242, 242);
+  .fiststylewrapper {
+    margin-bottom: 1rem;
+    .list-group {
+      .list-group-item {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+        }
+        &--title {
+          font-weight: bold;
+          margin-bottom: 0.3rem;
+          color: rgb(70, 70, 70);
+        }
+        &--description {
+          font-size: 0.65rem;
+          color: rgb(167, 167, 167);
+          margin-bottom: 0.3rem;
+        }
+        &--text {
+          font-size: 0.8rem;
+          color: rgb(70, 70, 70);
+          &:hover {
+            color: rgb(59, 52, 150);
+          }
+        }
+        &--comments {
+          font-size: 0.65rem;
+          color: rgb(128, 128, 128);
+        }
+        &--button {
+          color: rgb(133, 74, 24);
+          padding: 1 rem;
+          background-color: rgb(250, 204, 61);
+          width: 2rem;
+          font-size: 0.65rem;
+          border-radius: 0.3rem;
+          margin-top: 0.5rem;
+          border-style: none;
+        }
+      }
+    }
+  }
+  .secondstylewrapper {
+    .list-group {
+      .list-group-item {
+        display: flex;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+}
