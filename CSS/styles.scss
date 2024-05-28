@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+$lightGray: #717171;
+$mediumGray: #525252;
+$lightBorderForms: #bdbdbd;
+$purple:#712cf9;
+
+
 $theme-colors: (
   "primary": #5562eb,
   // Azul personalizado
@@ -130,4 +136,74 @@ $theme-colors: (
   }
 }
 
+// Estilos del header
+.navComponent {
+  box-shadow: 0px 0px 3px 0px $lightGray;
+  padding: 0.5rem;
+  &__container-search {
+    border: 1px solid $lightBorderForms;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: calc(100% - 150px);
+    position: relative;
+    display: none!important;
+  }
+  &__icon-logo {
+    width: 50px;
+  }
+  &__input {
+    border: none;
+    left: 1rem;
+    width: calc(100% - 150px);
+    padding-left: 34px;
+  }
+  &__button-search {
+    background-color: white;
+    border: none;
+  }
+  &__link {
+    font-size: 0.75rem;
+    color: $lightGray;
+    text-decoration: none;
 
+  }
+  &__button-mobile{
+    background: none;
+    border: none;
+  }
+}
+
+.button-link {
+  background-color: white;
+  color: $mediumGray;
+  padding: 0 0.5rem;
+  line-height: 35px;
+  &:hover {
+    background-color: hsl(234.88deg 71.93% 55.29% / 16%);
+    text-decoration: underline;
+  }
+}
+
+.button-primary {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid $purple;
+  color: $purple;
+  &:hover {
+    background-color: $purple;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width:768px)  {
+  .navComponent {
+    &__container-search {
+      display: block!important;
+    }
+    &__button-search {
+      position: absolute;
+      top: 6px;
+    }
+  }
+}

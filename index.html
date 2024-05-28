@@ -11,7 +11,56 @@
 </head>
 
 <body>
-  <header class="border border-primary"></header>
+  <header class="navComponent">
+    <nav class="container">
+      <div class="row">
+        <div class="col col-md-7 col-xl-8">
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-block d-sm-none">
+              <button class="navComponent__button-mobile" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+                <img src="img/icon_menu.svg" alt="menu" />
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft"
+                aria-labelledby="offcanvasLeftLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLeftLabel">
+                    Contenido
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">...</div>
+              </div>
+            </div>
+            <a href="#">
+              <img class="navComponent__icon-logo" src="img/icon_logo.png" alt="logo_dev.to" />
+            </a>
+            <div class="d-flex navComponent__container-search justify-content-between">
+              <button class="navComponent__button-search">
+                <img src="img/icon_search.svg" alt="icon-search" />
+              </button>
+              <input class="navComponent__input" type="search" placeholder="Search..." aria-label="Search" />
+              <a class="navComponent__link"
+                href="https://www.algolia.com/developers/?utm_source=devto&amp;utm_medium=referral" target="_blank"
+                rel="noopener noreferrer">
+                Powered by
+                <img class="p-1" src="img/icon_algolia.svg" alt="" />Algolia
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4 col-xl-4">
+          <div class="d-flex gap-3 justify-content-end">
+            <button class="navComponent__button-search d-block d-sm-none">
+              <img src="img/icon_search.svg" alt="icon-search" />
+            </button>
+            <a class="btn button-link d-none d-sm-block d-md-block" href="#" role="button">Login</a>
+            <a class="btn button-primary" href="#" role="button">Create Account</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main class="container d-flex justify-content-center">
     <aside class="border border-primary col-3 d-none d-sm-block"></aside>
     <section class="border border-primary col-6"></section>
