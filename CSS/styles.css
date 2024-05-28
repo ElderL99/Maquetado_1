@@ -1,1 +1,36 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #e5e5e5;
+  font-size: 0.875rem;
+  padding: 3rem;
+}
+.footer__legals {
+  color: #404040;
+  margin: 0;
+}
+.footer__link {
+  color: #3b49df;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__nav-links {
+  margin: 0;
+}
+.footer__nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.footer__nav-link:not(:last-child)::after {
+  content: "•";
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}/*# sourceMappingURL=styles.css.map */
