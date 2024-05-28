@@ -13,6 +13,7 @@ body {
   background-color: rgb(242, 242, 242);
 }
 .aside2 .fiststylewrapper {
+  margin-left: 0.5rem;
   margin-bottom: 1rem;
 }
 .aside2 .fiststylewrapper .list-group .list-group-item {
@@ -71,7 +72,8 @@ body {
   text-decoration: none;
   color: #333;
   margin-top: 1rem;
-  margin-left: 0.9rem;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
 }
 .aside2 .secondstylewrapper__card a:hover {
   color: rgb(59, 52, 150);
