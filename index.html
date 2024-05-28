@@ -14,28 +14,206 @@
   </head>
 
   <body>
-    <header class="border border-primary"></header>
-    <main class="container d-flex justify-content-center">
-      
-      <aside class="border border-primary col-3 d-none d-sm-block ">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <header class="navComponent">
+      <nav class="container">
+        <div class="row">
+          <div class="col col-md-7 col-xl-8">
+            <div class="d-flex align-items-center gap-3">
+              <div class="d-block d-sm-none">
+                <button
+                  class="navComponent__button-mobile"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasLeft"
+                  aria-controls="offcanvasLeft"
+                >
+                  <img src="img/icon_menu.svg" alt="menu" />
+                </button>
+                <div
+                  class="offcanvas offcanvas-start"
+                  tabindex="-1"
+                  id="offcanvasLeft"
+                  aria-labelledby="offcanvasLeftLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLeftLabel">
+                      Contenido
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">...</div>
+                </div>
+              </div>
+              <a href="#">
+                <img
+                  class="navComponent__icon-logo"
+                  src="img/icon_logo.png"
+                  alt="logo_dev.to"
+                />
+              </a>
+              <div
+                class="d-flex navComponent__container-search justify-content-between"
+              >
+                <button class="navComponent__button-search">
+                  <img src="img/icon_search.svg" alt="icon-search" />
+                </button>
+                <input
+                  class="navComponent__input"
+                  type="search"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+                <a
+                  class="navComponent__link"
+                  href="https://www.algolia.com/developers/?utm_source=devto&amp;utm_medium=referral"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Powered by
+                  <img class="p-1" src="img/icon_algolia.svg" alt="" />Algolia
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4 col-xl-4">
+            <div class="d-flex gap-3 justify-content-end">
+              <button class="navComponent__button-search d-block d-sm-none">
+                <img src="img/icon_search.svg" alt="icon-search" />
+              </button>
+              <a
+                class="btn button-link d-none d-sm-block d-md-block"
+                href="#"
+                role="button"
+                >Login</a
+              >
+              <a class="btn button-primary" href="#" role="button"
+                >Create Account</a
+              >
+            </div>
           </div>
         </div>
-      </aside>
+      </nav>
+    </header>
+    <main class="container d-flex justify-content-center">
+      <aside class="border border-primary col-3 d-none d-sm-block"></aside>
       <section class="border border-primary col-6"></section>
-      <aside class="border border-primary col-3 d-none d-sm-block">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      <aside class="aside2 border border-primary col-3 d-none d-sm-block">
+        <div class="fiststylewrapper">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p class="list-group-item--title"># discuss</p>
+              <p class="list-group-item--description">
+                Discussion threads targeting the whole community
+              </p>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text"
+                >What was your win this week?</a
+              >
+              <a href="" class="list-group-item--comments">52 comments</a>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text"
+                >How I gained 2100 subscribers on dev.to</a
+              >
+              <button href="" class="list-group-item--button">New</button>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text">Meme Monday</a>
+              <a href="" class="list-group-item--comments">27 comments</a>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text"
+                >How to Write a Standout Cover Letter as a Junior Developer</a
+              >
+              <button href="" class="list-group-item--button">New</button>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text"
+                >When you try to serve all needs...</a
+              >
+              <button href="" class="list-group-item--button">New</button>
+            </li>
+          </ul>
+        </div>
+        <div class="fiststylewrapper">
+          <div class="list-group">
+            <li class="list-group-item">
+              <p class="list-group-item--title"># watercooler</p>
+              <p class="list-group-item--description">
+                Light, and off-topic conversation.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text">Meme Monday</a>
+              <a href="" class="list-group-item--comments">27 comments</a>
+            </li>
+            <li class="list-group-item">
+              <a href="" class="list-group-item--text"
+                >We need to slow down, Everything is going too fast</a
+              >
+              <button href="" class="list-group-item--button">New</button>
+            </li>
           </div>
+        </div>
+        <div class="secondstylewrapper">
+          <p>trending guides / resources</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p>
+                <a href="">Top 50 System Design Interview Questions for 2024</a>
+              </p>
+              <p>
+                <a href=""
+                  >5 Skills Programmers and Developers Should Learn in 2024</a
+                >
+              </p>
+              <p><a href="">Array.reduce() is Goated 🐕 ✨</a></p>
+              <p>
+                <a href=""
+                  >You´re not a software engineer; you´re a "frameworker"</a
+                >
+              </p>
+              <p>
+                <a href=""
+                  >Mastering Relational Database Design: A Comprehensive
+                  Guide</a
+                >
+              </p>
+              <p><a href="">🕸️Web development trends we will see in 2024</a></p>
+              <p>
+                <a href=""
+                  >GTP-4p: Learn how to Implement a RAG on the new model, step
+                  by-step!</a
+                >
+              </p>
+              <p>
+                <a href=""
+                  >Why nobody grows up wanting to be a DevOps engineer</a
+                >
+              </p>
+            </li>
+          </ul>
+          <p>recently queried</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="">Bulma vs Bootstrap</a>
+              <a href="">cURL vs Postman</a>
+              <a href="">cuRl Response Time</a>
+              <a href="">Window Keyboard on Mac</a>
+              <a href="">Javascript Random String</a>
+              <a href="">Declarative vs Imperative</a>
+              <a href="">Git Revert Pushed Commit</a>
+              <a href="">Javascript Hack</a>
+              <a href="">userReducer TypeScript</a>
+              <a href="">Flask Tutotial</a>
+            </li>
+          </ul>
         </div>
       </aside>
     </main>
