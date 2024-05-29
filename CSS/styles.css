@@ -88,8 +88,7 @@
   border-radius: 0.7rem;
   background-color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
-  width: 15rem;
-  border-top: 1rem;
+  border-top: 0.5rem;
 }
 .div-card .encabezado {
   font-size: 1.25rem;
@@ -759,3 +758,4 @@ div.reaction-comments.d-flex.justify-content-between.mt-3{
 div.emojis-reaction_numbers.d-flex.mt-1.gap-1{
   font-size: 14px;
 } /*aqui termina*/
+
