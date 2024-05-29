@@ -87,8 +87,6 @@
   border-color: gray;
   border-radius: 0.7rem;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 0.5rem;
-  border-top: 0.5rem;
 }
 .div-card .encabezado {
   font-size: 1.25rem;
@@ -671,91 +669,109 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-}/*# sourceMappingURL=styles.css.map */
-div.main-navi_top{
-  display: flex;
-  gap:1.5rem
 }
-.main-navi_top span:hover{
+
+div.main-navi_top {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-navi_top span:hover {
   background-color: #ebecff;
   color: #5966ee;
   cursor: pointer;
 }
-div.head-dev-com.d-flex.justify-content-between{
+
+div.head-dev-com.d-flex.justify-content-between {
   padding-left: 1rem;
 }
+
 .profile-image {
   width: 20px;
   height: 20px;
   border-radius: 100%;
 }
-div.user-name_date.d-flex:hover{
+
+div.user-name_date.d-flex:hover {
   color: #3B49DF;
   cursor: pointer;
 }
-.card p{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+.card p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
-p.date-name{
+
+p.date-name {
   font-size: 12px;
 }
-div.hashtags-info{
+
+div.hashtags-info {
   display: flex;
   font-size: 14px;
   gap: 1rem;
   margin-left: 2rem;
 }
-div.hashtags-info span:hover{
+
+div.hashtags-info span:hover {
   background-color: #f1d6d6;
   border: 1px solid;
   border-color: #f1d6d6;
   border-radius: 3px;
   cursor: pointer;
 }
-img.img-emoji{
+
+img.img-emoji {
   height: 15px;
   width: 15px;
 }
-.start-now{
+
+.start-now {
   font-size: 30px;
   font-family: system-ui;
   font-weight: bold;
 }
-h5.card-title{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+h5.card-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 24px;
   margin-top: 2rem;
 }
-.general-info h6{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+.general-info h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 20px;
   margin-top: 1rem;
   margin-left: 2rem;
 }
-.general-info h6:hover{
+
+.general-info h6:hover {
   color: #3B49DF;
   cursor: pointer;
 }
-div.reaction-emojis.d-flex:hover{
+
+div.reaction-emojis.d-flex:hover {
   cursor: pointer;
   background-color: #f7f7f7;
   border-radius: 8px;
 }
-div.reactions-div.d-flex:hover{
+
+div.reactions-div.d-flex:hover {
   cursor: pointer;
   background-color: #f7f7f7;
   border-radius: 8px;
 }
-div.user-name_date.d-flex{
-  gap: .25rem;
+
+div.user-name_date.d-flex {
+  gap: 0.25rem;
 }
-div.reaction-comments.d-flex.justify-content-between.mt-3{
+
+div.reaction-comments.d-flex.justify-content-between.mt-3 {
   margin-left: 1.5rem;
 }
-div.emojis-reaction_numbers.d-flex.mt-1.gap-1{
-  font-size: 14px;
-} /*aqui termina*/
 
+div.emojis-reaction_numbers.d-flex.mt-1.gap-1 {
+  font-size: 14px;
+} /*aqui termina*//*# sourceMappingURL=styles.css.map */
