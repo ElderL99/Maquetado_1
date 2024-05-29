@@ -91,6 +91,10 @@
   width: 15rem;
   border-top: 1rem;
 }
+.div-card .encabezado {
+  font-size: 1.25rem;
+  border-color: black;
+}
 .div-card--buttons-div {
   display: flex;
   flex-direction: column;

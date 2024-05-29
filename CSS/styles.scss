@@ -109,6 +109,7 @@
   // aside-1-adan
   .adan{
     padding: 1rem;
+    
   }
    .div-card {
     color: #333;
@@ -119,6 +120,10 @@
     margin-bottom: .5rem;
     width: 15rem;
     border-top: 1rem;
+    .encabezado{
+      font-size: 1.25rem;
+      border-color: black;
+    }
   
     &--buttons-div {
       display: flex;
