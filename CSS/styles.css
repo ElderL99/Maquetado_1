@@ -5,6 +5,210 @@
   box-sizing: border-box;
 }
 
+.div-card {
+  color: #333;
+  padding: 1rem;
+  border-color: gray;
+  border-radius: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem;
+  width: 18rem;
+}
+.div-card--buttons-div {
+  display: flex;
+  flex-direction: column;
+}
+.div-card--buttons-div .buttons-div--create {
+  border-radius: 0.5rem;
+  color: rgb(47, 49, 217);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem 1rem 0.5rem;
+  text-align: center;
+  border-color: rgb(140, 144, 237);
+  background-color: white;
+}
+.div-card--buttons-div .buttons-div--login {
+  border-radius: 0.5rem;
+  color: rgb(47, 49, 217);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-style: none;
+  background-color: white;
+}
+
+.nav-icons {
+  width: 250px;
+  font-family: Arial, sans-serif;
+}
+.nav-icons--list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-icons .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+.nav-icons .nav-item__icon {
+  margin-right: 10px;
+}
+.nav-icons .nav-item__text {
+  font-size: 16px;
+}
+.nav-icons .nav-item:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.nav-popular__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.nav-popular__tag-container {
+  max-height: 42vh;
+  overflow-y: auto;
+}
+.nav-popular__tag {
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: start;
+}
+.nav-popular__tag-link.c-link--block {
+  color: gray;
+  text-decoration: none;
+}
+.nav-popular__tag-link.c-link--block:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+}
+
+.aside2 {
+  background-color: rgb(242, 242, 242);
+}
+
+.aside2 .fiststylewrapper {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item a {
+  text-decoration: none;
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item--title {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: rgb(70, 70, 70);
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item--description {
+  font-size: 0.65rem;
+  color: rgb(167, 167, 167);
+  margin-bottom: 0.3rem;
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item--text {
+  font-size: 0.8rem;
+  color: rgb(70, 70, 70);
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item--text:hover {
+  color: rgb(59, 52, 150);
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item--comments {
+  font-size: 0.65rem;
+  color: rgb(128, 128, 128);
+}
+
+.aside2 .fiststylewrapper .list-group .list-group-item--button {
+  color: rgb(133, 74, 24);
+  padding: 1 rem;
+  background-color: rgb(250, 204, 61);
+  width: 2rem;
+  font-size: 0.65rem;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  border-style: none;
+}
+
+.aside2 .secondstylewrapper p {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.85rem;
+  margin-left: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.aside2 .secondstylewrapper__card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.aside2 .secondstylewrapper__card a {
+  text-decoration: none;
+  color: #333;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+}
+
+.aside2 .secondstylewrapper__card a:hover {
+  color: rgb(59, 52, 150);
+  background-color: rgb(254, 254, 254);
+}
+
+.aside2 .footer {
+  background-color: #E5E5E5;
+  font-size: 0.875rem;
+  padding: 3rem;
+}
+
+.aside2 .footer__legals {
+  color: #404040;
+  margin: 0;
+}
+
+.aside2 .footer__link {
+  color: #3B49DF;
+  text-decoration: none;
+}
+
+.aside2 .footer__link:hover {
+  text-decoration: underline;
+}
+
+.aside2 .footer__nav-links {
+  margin: 0;
+}
+
+.aside2 .footer__nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.aside2 .footer__nav-link:not(:last-child)::after {
+  content: "•";
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+} 
 .footer {
   background-color: #e5e5e5;
   font-size: 0.875rem;
@@ -33,21 +237,4 @@
   content: "•";
   font-size: 1.5rem;
   padding: 0 0.5rem;
-}/*# sourceMappingURL=styles.css.map */
-.sidebar {
-  min-height: 100vh;
-  background-color: #f8f9fa;
-}
-
-.sidebar .nav-link {
-  color: #333;
-}
-
-.sidebar .nav-link.active {
-  background-color: #007bff;
-  color: white;
-}
-
-.l {
-  padding: 3rem;
 }/*# sourceMappingURL=styles.css.map */
