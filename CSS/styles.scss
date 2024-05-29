@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+
+$lightGray: #717171;
+$mediumGray: #525252;
+$lightBorderForms: #bdbdbd;
+$purple:#712cf9;
+
 
 $theme-colors: (
   "primary": #5562eb,
@@ -23,8 +30,18 @@ $theme-colors: (
   "mi-color-fav": darkred,
 );
 
+@mixin profile-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.profile-image{
+    @include profile-image()
+}
+
 .aside2 {
   background-color: rgb(242, 242, 242);
+  
   .fiststylewrapper {
     margin-bottom: 1rem;
     .list-group {
@@ -98,6 +115,236 @@ $theme-colors: (
     }
   }
 }
+// aside-1-adan
+ .div-card {
+  color: #333;
+  padding: 1rem;
+  border-color: gray;
+  border-radius: .8rem ;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: .5rem;
+ 
+  width: 18rem;
+
+  &--buttons-div {
+    display: flex;
+    flex-direction: column;
+    
+    
+
+    .buttons-div--create {
+      border-radius: .5rem;
+      color: rgb(47,49,217);
+      margin-bottom: .5rem;
+      padding: .5rem 1rem 1rem .5rem;
+      text-align: center;
+      border-color: rgb(140 ,144 ,237);
+      background-color: white;
+    }
+
+    .buttons-div--login {
+      border-radius: .5rem;
+      color: rgb(47,49,217);
+      margin-bottom: .5rem;
+      
+      text-align: center;
+      border-style: none;
+      background-color: white;
+      
+    }
+  }
+}
+// nav-items (Adan)
+.nav-icons {
+  width: 250px; // Adjust width as necessary
+  font-family: Arial, sans-serif;
+
+  &--list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease;
+    
+
+    &__icon {
+      margin-right: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #f0f0f0;
+      text-decoration: underline; // Añade subrayado al pasar el ratón
+    }
+  }
+}
+
+//other-nav-adan
+
+
+//popular Tags(adan)
+.nav-popular {
+  &__title {
+    // Estilos para el título "Popular Tags"
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em;
+    
+  }
+
+  &__tag-container {
+    // Estilos para el contenedor de etiquetas
+    max-height: 42vh;
+    overflow-y: auto;
+  }
+
+  &__tag {
+    // Estilos para cada etiqueta
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content:start;
+  }
+
+  // Estilos para el enlace dentro de cada etiqueta
+  &__tag-link {
+    &.c-link {
+      &--block {
+        color: gray; // Cambia el color según tus preferencias
+        text-decoration: none; // Elimina el subrayado del enlace
+        &:hover {
+          text-decoration: underline; // Añade subrayado al pasar el ratón
+          
+        }
+      }
+    }
+  }
+}
+//main-section_andres
+@mixin profile-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.profile-image{
+    @include profile-image()
+}
+
+
+// aside-lau
+
+body {
+  background-color: rgb(242, 242, 242);
+  
+}
+.aside2 {
+  background-color: rgb(242, 242, 242);
+}
+.aside2 .fiststylewrapper {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.aside2 .fiststylewrapper .list-group .list-group-item {
+  display: flex;
+  flex-direction: column;
+}
+.aside2 .fiststylewrapper .list-group .list-group-item a {
+  text-decoration: none;
+}
+.aside2 .fiststylewrapper .list-group .list-group-item--title {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: rgb(70, 70, 70);
+}
+.aside2 .fiststylewrapper .list-group .list-group-item--description {
+  font-size: 0.65rem;
+  color: rgb(167, 167, 167);
+  margin-bottom: 0.3rem;
+}
+.aside2 .fiststylewrapper .list-group .list-group-item--text {
+  font-size: 0.8rem;
+  color: rgb(70, 70, 70);
+}
+.aside2 .fiststylewrapper .list-group .list-group-item--text:hover {
+  color: rgb(59, 52, 150);
+}
+.aside2 .fiststylewrapper .list-group .list-group-item--comments {
+  font-size: 0.65rem;
+  color: rgb(128, 128, 128);
+}
+.aside2 .fiststylewrapper .list-group .list-group-item--button {
+  color: rgb(133, 74, 24);
+  padding: 1 rem;
+  background-color: rgb(250, 204, 61);
+  width: 2rem;
+  font-size: 0.65rem;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  border-style: none;
+}
+.aside2 .secondstylewrapper p {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.85rem;
+  margin-left: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+.aside2 .secondstylewrapper__card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+.aside2 .secondstylewrapper__card a {
+  text-decoration: none;
+  color: #333;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+}
+.aside2 .secondstylewrapper__card a:hover {
+  color: rgb(59, 52, 150);
+  background-color: rgb(254, 254, 254);
+}
+.aside2 .footer {
+  background-color: #E5E5E5;
+  font-size: 0.875rem;
+  padding: 3rem;
+}
+.aside2 .footer__legals {
+  color: #404040;
+  margin: 0;
+}
+.aside2 .footer__link {
+  color: #3B49DF;
+  text-decoration: none;
+}
+.aside2 .footer__link:hover {
+  text-decoration: underline;
+}
+.aside2 .footer__nav-links {
+  margin: 0;
+}
+.aside2 .footer__nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.aside2 .footer__nav-link:not(:last-child)::after {
+  content: "•";
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}/*# sourceMappingURL=styles.css.map */
 
 // Footer
 .footer{
@@ -130,4 +377,76 @@ $theme-colors: (
   }
 }
 
+// Estilos del header
+.navComponent {
+  box-shadow: 0px 0px 3px 0px $lightGray;
+  padding: 0.5rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  &__container-search {
+    border: 1px solid $lightBorderForms;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: calc(100% - 150px);
+    position: relative;
+    display: none!important;
+  }
+  &__icon-logo {
+    width: 50px;
+  }
+  &__input {
+    border: none;
+    left: 1rem;
+    width: calc(100% - 150px);
+    padding-left: 34px;
+  }
+  &__button-search {
+    background-color: white;
+    border: none;
+  }
+  &__link {
+    font-size: 0.75rem;
+    color: $lightGray;
+    text-decoration: none;
 
+  }
+  &__button-mobile{
+    background: none;
+    border: none;
+  }
+}
+
+.button-link {
+  background-color: white;
+  color: $mediumGray;
+  padding: 0 0.5rem;
+  line-height: 35px;
+  &:hover {
+    background-color: hsl(234.88deg 71.93% 55.29% / 16%);
+    text-decoration: underline;
+  }
+}
+
+.button-primary {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 1px solid $purple;
+  color: $purple;
+  &:hover {
+    background-color: $purple;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width:768px)  {
+  .navComponent {
+    &__container-search {
+      display: block!important;
+    }
+    &__button-search {
+      position: absolute;
+      top: 6px;
+    }
+  }
+}
