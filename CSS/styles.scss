@@ -7,8 +7,7 @@
 $lightGray: #717171;
 $mediumGray: #525252;
 $lightBorderForms: #bdbdbd;
-$purple:#712cf9;
-
+$purple: #712cf9;
 
 $theme-colors: (
   "primary": #5562eb,
@@ -31,6 +30,7 @@ $theme-colors: (
 
 .aside2 {
   background-color: rgb(242, 242, 242);
+
   .fiststylewrapper {
     margin-bottom: 1rem;
     .list-group {
@@ -106,7 +106,7 @@ $theme-colors: (
 }
 
 // Footer
-.footer{
+.footer {
   background-color: #e5e5e5;
   font-size: 0.875rem;
   padding: 3rem;
@@ -129,7 +129,7 @@ $theme-colors: (
     display: flex;
     align-items: center;
     &:not(:last-child)::after {
-      content: '•';
+      content: "•";
       font-size: 1.5rem;
       padding: 0 0.5rem;
     }
@@ -146,7 +146,7 @@ $theme-colors: (
     border-radius: 0.5rem;
     width: calc(100% - 150px);
     position: relative;
-    display: none!important;
+    display: none !important;
   }
   &__icon-logo {
     width: 50px;
@@ -165,9 +165,8 @@ $theme-colors: (
     font-size: 0.75rem;
     color: $lightGray;
     text-decoration: none;
-
   }
-  &__button-mobile{
+  &__button-mobile {
     background: none;
     border: none;
   }
@@ -196,10 +195,10 @@ $theme-colors: (
   }
 }
 
-@media only screen and (min-width:768px)  {
+@media only screen and (min-width: 768px) {
   .navComponent {
     &__container-search {
-      display: block!important;
+      display: block !important;
     }
     &__button-search {
       position: absolute;
